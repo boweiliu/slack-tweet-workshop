@@ -1,0 +1,31 @@
+name = "tweet-workshop"
+display_name = "Tweet Workshop"
+# What the app is for, in the person's terms: what an agent reads to decide whether this app
+# does what it needs. The app's API document (served at api_schema_path) carries it too.
+description = "Workshop first-draft tweets that Studio writes from ideas posted in Slack, then pick and polish what gets posted"
+api_schema_path = "/api/schema"
+icon = "icon.svg"
+priority = "user"
+program = "tweet-workshop"
+# The shell stops the app once no window shows it (a minute after the last one
+# closes) and starts it again on the next request; false keeps it running for
+# the life of the workspace. Set false if the app does work between requests
+# (a background thread, a poller, a subscription to an outside service, a job
+# that outlives the window): a stop loses that work. Periodic work (a refresh
+# every N minutes, a nightly sync) is a routine, not a loop in the service:
+# see the manage-routines skill.
+stop_when_no_windows = true
+
+# How update-app boots a throwaway preview of this app: on a free port, over a
+# scratch copy of its data (see .agents/skills/update-app/scripts/preview_app.py).
+[preview]
+env = {TWEET_WORKSHOP_PORT = "{port:main}", TWEET_WORKSHOP_HOST = "{host}", TWEET_WORKSHOP_DATA_DIR = "{copy:data}"}
+copies = {data = "data/.apps/tweet-workshop"}
+
+[[references]]
+path = ".agents/skills/tweet-workshop-setup"
+note = "Sets up the drafter this app shows: Slack bot token, channel, voice guide link, posting on/off"
+
+[[references]]
+path = "system/routines/tweet-idea-drafter.toml"
+note = "Runs tweet_workshop.drafter every 10 minutes; it writes the ideas/ records the app reads"

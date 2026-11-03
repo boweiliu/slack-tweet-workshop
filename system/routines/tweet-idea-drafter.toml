@@ -1,0 +1,7 @@
+title = "Tweet idea drafter"
+what = "Checks the ideas channel in Slack for new tweet ideas, writes first drafts to the voice guide into Tweet Workshop, and replies with them in the idea's thread when posting is on."
+every = "10m"
+command = ["python3", "system/scripts/with_secrets.py", "data/.secrets/tweet-workshop-slack.env", "--", "uv", "run", "--no-sync", "python", "-m", "tweet_workshop.drafter", "run"]
+timeout = "15m"
+app = "tweet-workshop"
+enabled = false

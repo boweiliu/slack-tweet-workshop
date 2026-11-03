@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" role="img" aria-label="Slack Tweet Workshop: an idea queue beside three draft tweets, one picked">
+  <rect width="240" height="160" rx="12" fill="#fbfaf7"/>
+  <!-- top bar -->
+  <path d="M12 0 H228 A12 12 0 0 1 240 12 V22 H0 V12 A12 12 0 0 1 12 0 Z" fill="#0b292b"/>
+  <path d="M14 6.5 C18.5 6 22 6 23.5 6.3 C25.5 6.6 26.5 7.9 26.4 10 L26.3 12.6 C26.2 14.6 24.8 15.8 23 15.9 L18.3 16 L15.3 18.6 C14.8 19 14.3 18.8 14.5 18.2 L14.9 16 C13.3 15.7 12.3 14.4 12.3 12.7 L12.2 10 C12.2 7.7 13.3 6.6 14 6.5 Z" fill="#f5d6a0"/>
+  <rect x="32" y="9" width="46" height="5" rx="2.5" fill="#f5d6a0"/>
+  <rect x="86" y="9.5" width="70" height="4" rx="2" fill="#4c6a6b"/>
+  <rect x="196" y="7.5" width="32" height="8" rx="4" fill="#1f4446"/>
+  <!-- queue column -->
+  <rect x="0" y="22" width="84" height="138" fill="#ffffff"/>
+  <path d="M0 148 V160 H12 A12 12 0 0 1 0 148 Z" fill="#fbfaf7"/>
+  <rect x="84" y="22" width="1" height="138" fill="#e3e6e3"/>
+  <rect x="8" y="29" width="22" height="8" rx="4" fill="#e6eeec"/>
+  <rect x="11" y="32" width="16" height="2.5" rx="1.25" fill="#0b292b"/>
+  <rect x="34" y="31.5" width="18" height="3" rx="1.5" fill="#c9cfcc"/>
+  <rect x="56" y="31.5" width="20" height="3" rx="1.5" fill="#c9cfcc"/>
+  <rect x="4" y="44" width="76" height="26" rx="5" fill="#e6eeec"/>
+  <circle cx="13" cy="52" r="5" fill="#d26645"/>
+  <rect x="22" y="49" width="40" height="3.5" rx="1.75" fill="#16201f"/>
+  <rect x="22" y="56" width="52" height="3" rx="1.5" fill="#8d9795"/>
+  <rect x="22" y="62" width="34" height="3" rx="1.5" fill="#8d9795"/>
+  <circle cx="13" cy="82" r="5" fill="#97630c"/>
+  <rect x="22" y="79" width="34" height="3.5" rx="1.75" fill="#5f6b69"/>
+  <rect x="22" y="86" width="50" height="3" rx="1.5" fill="#c9cfcc"/>
+  <rect x="4" y="97" width="76" height="1" fill="#eef0ee"/>
+  <circle cx="13" cy="110" r="5" fill="#2f4f6b"/>
+  <rect x="22" y="107" width="44" height="3.5" rx="1.75" fill="#5f6b69"/>
+  <rect x="22" y="114" width="40" height="3" rx="1.5" fill="#c9cfcc"/>
+  <rect x="4" y="125" width="76" height="1" fill="#eef0ee"/>
+  <circle cx="13" cy="138" r="5" fill="#4b4c08"/>
+  <rect x="22" y="135" width="30" height="3.5" rx="1.75" fill="#5f6b69"/>
+  <rect x="22" y="142" width="46" height="3" rx="1.5" fill="#c9cfcc"/>
+  <!-- the idea as posted in Slack -->
+  <rect x="94" y="30" width="138" height="24" rx="5" fill="#fdf6e8"/>
+  <rect x="94" y="30" width="3" height="24" rx="1.5" fill="#f5d6a0"/>
+  <rect x="102" y="36" width="80" height="3.5" rx="1.75" fill="#16201f"/>
+  <rect x="102" y="43" width="112" height="3" rx="1.5" fill="#a5541f" opacity="0.55"/>
+  <!-- three drafts, the middle one picked -->
+  <rect x="94" y="61" width="138" height="27" rx="6" fill="#ffffff" stroke="#e3e6e3"/>
+  <rect x="102" y="68" width="116" height="3" rx="1.5" fill="#5f6b69"/>
+  <rect x="102" y="74" width="98" height="3" rx="1.5" fill="#5f6b69"/>
+  <rect x="102" y="80" width="60" height="3" rx="1.5" fill="#c9cfcc"/>
+  <rect x="94" y="93" width="138" height="29" rx="6" fill="#ffffff" stroke="#0b292b" stroke-width="1.6"/>
+  <rect x="102" y="100" width="110" height="3" rx="1.5" fill="#16201f"/>
+  <rect x="102" y="106" width="104" height="3" rx="1.5" fill="#16201f"/>
+  <rect x="102" y="112" width="70" height="3" rx="1.5" fill="#16201f"/>
+  <circle cx="222" cy="103" r="6" fill="#2f6b4a"/>
+  <path d="M219.2 103.2 L221.3 105.3 L225 100.9" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="94" y="127" width="138" height="21" rx="6" fill="#ffffff" stroke="#e3e6e3"/>
+  <rect x="102" y="134" width="108" height="3" rx="1.5" fill="#5f6b69"/>
+  <rect x="102" y="140" width="76" height="3" rx="1.5" fill="#c9cfcc"/>
+  <!-- ready to post -->
+  <rect x="180" y="151" width="52" height="6" rx="3" fill="#0b292b"/>
+</svg>

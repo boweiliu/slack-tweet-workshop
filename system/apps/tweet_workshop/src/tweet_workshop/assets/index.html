@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tweet Workshop</title>
+<link rel="stylesheet" href="/assets/app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">Tweet Workshop</div>
+  <div class="sources" id="sources"></div>
+  <label class="me">You are <input id="me" placeholder="your name" size="10"></label>
+</header>
+
+<div class="setup" id="setup" hidden></div>
+
+<div class="layout">
+  <aside class="queue">
+    <nav class="tabs" id="tabs"></nav>
+    <ul class="idea-list" id="idea-list"><li class="empty">Loading ideas...</li></ul>
+  </aside>
+
+  <main class="detail" id="detail"></main>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+<script src="/assets/app.js"></script>
+<!--SHELL_PAGE_SCRIPT-->
+</body>
+</html>

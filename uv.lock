@@ -48,6 +48,7 @@ members = [
     "system-monitor",
     "terminal-app",
     "tk-command-parsing",
+    "tweet-workshop",
     "workspace-layout",
     "workspace-themes",
 ]
@@ -4194,6 +4195,43 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/34/b1/25ee53be3125145cef9385f159a44547b4a01e1b2d2828055ca69b7e18aa/traceback_with_variables-2.2.1.tar.gz", hash = "sha256:ea7c695f9b401762f68f75df0439d661112b8dbd58bcd6910e402cff925ad7e0", size = 26145, upload-time = "2025-10-24T13:39:35.141Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/4a/06/fda9970d55fbbb7cd5cc856da2a9c693107e20f84386596da1f25b90a8cf/traceback_with_variables-2.2.1-py3-none-any.whl", hash = "sha256:ab6d75c72d26d61217962d11db44c98c62dccd2fedb2d4fb0ae4f9faf9db23c2", size = 22388, upload-time = "2025-10-24T13:29:32.712Z" },
+]
+
+[[package]]
+name = "tweet-workshop"
+version = "0.1.0"
+source = { editable = "system/apps/tweet_workshop" }
+dependencies = [
+    { name = "app-schema" },
+    { name = "flask" },
+    { name = "flask-sock" },
+    { name = "imbue-common" },
+    { name = "loguru" },
+    { name = "pydantic" },
+    { name = "werkzeug" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "app-schema", extra = ["testing"] },
+    { name = "ty" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "app-schema", editable = "system/libs/app_schema" },
+    { name = "flask", specifier = ">=3.0" },
+    { name = "flask-sock", specifier = ">=0.7" },
+    { name = "imbue-common", git = "https://github.com/imbue-ai/mngr?subdirectory=libs%2Fimbue_common&rev=6550c2b506f74cbffe4be6475bbe84ac26f97833" },
+    { name = "loguru", specifier = ">=0.7" },
+    { name = "pydantic", specifier = ">=2.0" },
+    { name = "werkzeug", specifier = ">=3.0" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "app-schema", extras = ["testing"], editable = "system/libs/app_schema" },
+    { name = "ty", specifier = "==0.0.85" },
 ]
 
 [[package]]
